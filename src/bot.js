@@ -5,8 +5,6 @@ const ejecutarPlata = require("./commands/plata.command");
 const ejecutarSpot = require("./commands/spot.command");
 const ejecutarQuilates = require("./commands/quilates.command");
 
-console.log("🤖 Bot iniciado correctamente");
-
 bot.onText(/^\/start$/, async (msg) => {
   await ejecutarHelp(msg, bot);
 });
